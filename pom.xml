@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.16</version>
+        <version>4.51</version>
         <relativePath />
     </parent>
     <build>
@@ -33,8 +33,7 @@
     <properties>
         <revision>1.0.6</revision>
         <changelist>-SNAPSHOT</changelist>
-        <jenkins.version>2.277.1</jenkins.version>
-        <java.level>8</java.level>
+        <jenkins.version>2.346.3</jenkins.version>
         <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
 
         <workflow.version>1.14.2</workflow.version>
@@ -85,19 +84,16 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>scm-api</artifactId>
-            <version>${scm-api-plugin.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>scm-api</artifactId>
-            <version>${scm-api-plugin.version}</version>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-multibranch</artifactId>
-            <version>${workflow.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.errorprone</groupId>
@@ -209,7 +205,6 @@
         <dependency>
             <groupId>commons-digester</groupId>
             <artifactId>commons-digester</artifactId>
-            <version>${commons.digester.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.flogger</groupId>
@@ -229,7 +224,6 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>${google.guava.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -239,7 +233,6 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-compress</artifactId>
-            <version>${apache.commons.compress.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -291,12 +284,10 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>git</artifactId>
-            <version>${git.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>git</artifactId>
-            <version>${git.version}</version>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
@@ -340,13 +331,11 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.objenesis</groupId>
             <artifactId>objenesis</artifactId>
-            <version>3.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
